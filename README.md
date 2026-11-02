@@ -1,92 +1,48 @@
-# WMART EU2 Sales-Dashboard
+# European Retail Sales Dashboard (Tableau)
 
-### Dashboard Link : https://public.tableau.com/app/profile/sumanth.gm/viz/eroupenSales_Project/Overview
+**Live dashboard:** [Tableau Public — European Sales Overview](https://public.tableau.com/app/profile/sumanth.gm/viz/eroupenSales_Project/Overview)
 
-## Problem Statement
+An interactive Tableau dashboard analysing four years (2011–2014) of European retail sales — orders, sales, profit and
+quantity across product categories (Furniture, Office Supplies, Technology), regions and customer segments.
 
-1. Find which sub-category is having the maximum quantity and in which region.
-2. Build a waterfall chart with one dimension & one measure.
-3. Find which state has the maximum and minimum profit ratio. (calculate the profit ratio by making use of calculation
-field).
-4. By making use of tree map find which order ID acquired the maximum and minimum discount.
-5. Create an Interactive Dashboard by making use of above worksheets
+![Dashboard](https://github.com/user-attachments/assets/e9672985-c48c-4e00-becb-1f1f0de093c8)
 
-## Project Overview
+## Questions answered
 
-This project presents a detailed sales performance analysis of European retail data over a 4-year period (2011–2014). The dataset includes metrics like orders, sales, profit, and quantities across multiple product categories (Furniture, Office Supplies, Technology), regions, and customer segments.
+1. Which sub-category sells the highest quantity, and in which region?
+2. Waterfall chart of one measure across one dimension.
+3. Which state has the highest and lowest profit ratio (calculated field: profit ÷ sales)?
+4. Tree map: which order IDs received the largest and smallest discounts?
+5. An interactive dashboard combining the worksheets above.
 
-Using Tableau, we built a dynamic business dashboard to evaluate:
+## Headline KPIs (from the dashboard)
 
-Sales targets vs actuals
+| KPI | Value |
+| --- | --- |
+| Total sales | $2,348,482 |
+| Total profit | $283,240 |
+| Orders | 8,047 |
 
-Regional profitability
+## Approach
 
-Sub-category performance
+1. **Data understanding** — reviewed order, product, customer and geography fields.
+2. **Preparation** — typed and structured fields (order date, category, sub-category, sales, profit, discount).
+3. **Analysis** — targets vs actuals by month and year, top customers and products, sub-category profitability,
+   discount and profit-ratio patterns by region and state.
+4. **Dashboard and story** — linked views with filters for region, category and year.
 
-Customer behavior
+## Findings
 
-Year-wise and category-wise KPIs
+- Technology has the strongest profit margins; Furniture is the weakest on profitability.
+- A small set of products and customers contributes most of the profit.
+- Recommendations: prioritise high-margin technology lines, prune low-performing SKUs, review discount policy, and
+  shift sales effort toward the most profitable regions.
 
+## Files
 
-### Steps followed 
+| File | Contents |
+| --- | --- |
+| `European_Sales_Dashboard.twbx` | Tableau packaged workbook (open with Tableau Desktop or Tableau Reader) |
+| `European_Sales_Dashboard.pptx` | Presentation of the dashboard and findings |
 
-1. Data Understanding:
-Raw sales data for multiple categories across years was reviewed and understood.
-
-2. Preprocessing:
-Data was cleaned and structured into relevant fields such as Order Date, Category, Sub-Category, Profit, Sales, etc.
-
-3. Exploratory Analysis in Tableau:
-We developed visual dashboards to explore:
-
-Monthly and yearly targets vs actuals
-
-Top customers and product performance
-
-Sub-category profitability and quantity sold
-
-Discount trends and profit ratios by region
-
-4. KPI Derivation:
-KPIs such as Total Orders, Total Sales, Total Profit, and Profit % were calculated:
-
-diff
-Copy
-Edit
-- Total Sales: $2,348,482
-- Total Profit: $283,240
-- Orders: 8,047
-
-5. Dashboard Creation:
-Interactive dashboards were built for:
-
-Sales & Profit trends
-
-Region-wise analysis
-
-State-level performance (Max & Min profit ratios)
-
-Customer segmentation and order counts
-
-6. Storytelling:
-Visual storyboards highlighted key findings:
-
-Tech category had high profit margins
-
-Furniture underperformed in profitability
-
-Specific products and customers contributed to most profits
-
-7. Strategic Recommendations:
-
-Focus on high-performing tech products
-
-Cut low-performing SKUs
-
-Review discount policies
-
-Reallocate sales efforts to profitable regions
-
-Dashboard:
-
-![Image](https://github.com/user-attachments/assets/e9672985-c48c-4e00-becb-1f1f0de093c8)
+**Tools:** Tableau Desktop, Tableau Public.
